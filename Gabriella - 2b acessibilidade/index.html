@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Beleza em Cores</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f5;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background-color: #ff6f61;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        header h1 {
+            font-size: 3rem;
+        }
+
+        .intro {
+            padding: 3rem 2rem;
+            background-color: #ffffff;
+            margin: 2rem auto;
+            max-width: 800px;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .intro h2 {
+            color: #ff6f61;
+            font-size: 2rem;
+        }
+
+        .intro p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .contact {
+            background-color: #ff6f61;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .contact p {
+            font-size: 1.2rem;
+        }
+
+        .contact a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .btn-accessibility {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: #ff6f61;
+            color: white;
+            padding: 1rem;
+            border: none;
+            border-radius: 50%;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        .btn-accessibility:hover {
+            background-color: #d15d56;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Beleza em Cores</h1>
+        <p>Transformando sua beleza, uma cor de cada vez</p>
+    </header>
+
+    <section class="intro">
+        <h2>Sobre Maquiagem</h2>
+        <p>A maquiagem é uma forma poderosa de expressão. Ela permite que cada pessoa realce sua beleza, se sinta mais confiante e se divirta com as cores e técnicas. Através da maquiagem, podemos não apenas mudar nossa aparência, mas também transmitir emoções e contar histórias. Se você está procurando dicas de maquiagem para o dia a dia ou para eventos especiais, este é o lugar certo.</p>
+    </section>
+
+    <section class="contact">
+        <p>Entre em contato conosco para mais informações ou para agendar um atendimento!</p>
+        <p>Email: <a href="mailto:gabriellavitoria01@icloud.com">gabriellavitoria01@icloud.com</a></p>
+    </section>
+
+    <button class="btn-accessibility" onclick="toggleAccessibility()">Acessibilidade</button>
+
+    <footer>
+        <p>&copy; 2025 Beleza em Cores. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        function toggleAccessibility() {
+            const body = document.body;
+            if (body.style.fontSize === "18px") {
+                body.style.fontSize = "16px";
+            } else {
+                body.style.fontSize = "18px";
+            }
+        }
+    </script>
+
+</body>
+</html>
